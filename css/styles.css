@@ -1,0 +1,44 @@
+html {
+    padding-left: calc(100vw - 100%);
+    overflow-x: hidden;
+}
+
+body {
+    background:linear-gradient(0deg, #550832c7, #f122b34d), url(/assets/170328.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+}
+
+h1 {
+    font-family: 'Roboto Mono',monospace;
+}
+
+#generate-button {
+    color: white;
+    background: #00000000;
+    border: none;
+    outline:none;
+    font-size: 2rem;
+}
+
+#quote {
+    font-size: 2rem;
+    font-family: 'Roboto Mono', monospace;
+    color: #ffffff;
+}
+
+.container {
+    border: 1px solid #000000;
+    background: #000000ad;
+    padding: 20px;
+    text-align: center;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
