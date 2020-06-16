@@ -1,38 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" >
-    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/person-raising-both-hands-in-celebration_1f64c.png" type="image/png" sizes="16x16">
-    <title> Y E E Z U S • S A Y S</title>
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+    />
+    <link
+      rel="icon"
+      href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/person-raising-both-hands-in-celebration_1f64c.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <title>Y E E Z U S • S A Y S</title>
+  </head>
+  <body>
     <div class="wrapper">
-        <h1>Y E E Z U S • S A Y S</h1>
+      <h1>Y E E Z U S • S A Y S</h1>
 
-        <button id="generate-button">🙌</button>
+      <div class="controller">
+        <button id="generate-button" class="emoji tooltip">
+          🙌
+          <span class="tooltiptext">Generate quote</span>
+        </button>
+        <button id="colour" class="emoji tooltip">
+          🎨
+          <span class="tooltiptext">Generate colour</span>
+        </button>
+        <button id="about" class="emoji tooltip">
+          💎
+          <span class="tooltiptext">About</span>
+        </button>
+      </div>
 
-        <br>
-
-        <div class="container">
-            <p id="quote"></p>
+      <!-- The Modal -->
+      <div id="about-modal" class="modal">
+        <!-- Modal content -->
+        <div class="about-model-content">
+          <span class="close">&times;</span>
+          <p>• A B O U T •</p>
+          <hr />
+          <p>
+            A simple web page that generates YEEZUS quotes every 10 minutes.
+          </p>
+          <p>Controls:</p>
+          <p>🙌 : Get quote</p>
+          <p>🎨 : Randomise colour overlay</p>
+          <p>💎 : Display about</p>
+          <hr />
+          <p>
+            Built using the <a href="https://kanye.rest/">kanye.rest</a> API.
+          </p>
         </div>
+      </div>
 
-        <button id="colour">Colour</button>
+      <br />
+
+      <div class="container">
+        <p id="quote"></p>
+      </div>
     </div>
 
     <footer>
-        Made by Vincent Lieu <br>
-        <a href="https://github.com/vincentlieu" target="_blank">Github</a> • 
-        <a href="https://twitter.com/_vincentlieu" target="_blank">Twitter</a> • 
-        <a href="https://linkedin.com/in/vincent-lieu/" target="_blank">LinkedIn</a>
-    </footer> 
+      Made by Vincent Lieu <br />
+      <a href="https://github.com/vincentlieu/YEEZUS-SAYS" target="_blank"
+        >Github</a
+      >
+      • <a href="https://twitter.com/_vincentlieu" target="_blank">Twitter</a> •
+      <a href="https://linkedin.com/in/vincent-lieu/" target="_blank"
+        >LinkedIn</a
+      >
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/quote.js"></script>
-</body>
+  </body>
 </html>

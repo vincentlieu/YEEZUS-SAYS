@@ -31,6 +31,24 @@ generateBtn.addEventListener("click", () => {
 setInterval(getQuote, 600000);
 
 
+/* Modal */
+const aboutModal = document.querySelector("#about-modal");
+const aboutBtn = document.querySelector("#about");
+const closeModal = document.querySelector(".close");
+
+aboutBtn.onclick = () => {
+  aboutModal.style.display = "block";
+}
+
+closeModal.onclick = () => {
+  aboutModal.style.display = "none";
+}
+
+window.onclick = (event) => {
+  if (event.target == modal) {
+    aboutModal.style.display = "none";
+  }
+}
 
 
 
