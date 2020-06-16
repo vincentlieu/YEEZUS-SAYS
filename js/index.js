@@ -13,7 +13,7 @@ function changeColour() {
     const bodycolour = document.querySelector("body");
     const randomColour = Math.floor(Math.random() * 16777215).toString(16);
 
-    bodycolour.style.backgroundImage = `linear-gradient(0deg, #${randomColour}c7, #${randomColour}4d), url(/assets/images/bg.jpg)`;
+    bodycolour.style.backgroundImage = `linear-gradient(0deg, #${randomColour}c7, #${randomColour}4d), url(./assets/images/bg.jpg)`;
 }
 
 // Generate new gradiant colour
