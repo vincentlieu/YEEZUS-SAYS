@@ -1,30 +1,32 @@
 html {
     padding-left: calc(100vw - 100%);
     overflow-x: hidden;
+    font-family: 'Roboto Mono', monospace;
 }
 
 body {
-    background:linear-gradient(0deg, #550832c7, #f122b34d), url(/assets/170328.jpg);
+    background:linear-gradient(0deg, #550832c7, #f122b34d), url(/assets/bg.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top;
+    background-size: cover;
+    margin: 0;
 }
 
 h1 {
-    font-family: 'Roboto Mono',monospace;
+    font-size:calc(1em + 1.5vw);
+    
 }
-
 #generate-button {
-    color: white;
+    color: #ffffff;
     background: #00000000;
     border: none;
-    outline:none;
-    font-size: 2rem;
+    outline: none;
+    font-size:calc(1em + 1.5vw);
 }
 
 #quote {
-    font-size: 2rem;
-    font-family: 'Roboto Mono', monospace;
+    font-size:calc(1em + 0.5vw);
     color: #ffffff;
 }
 
@@ -32,6 +34,7 @@ h1 {
     border: 1px solid #000000;
     background: #000000ad;
     padding: 20px;
+    margin: 10px;
     text-align: center;
 }
 
@@ -41,4 +44,19 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+footer {
+    background: #000000;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px 0px 8px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
